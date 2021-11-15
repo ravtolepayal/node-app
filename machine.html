@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form method="get" action="index.js">
+
+  <select id="m">
+    <option name="" value="0">Select Machine</option>
+    <option value="Siemens">Siemens</option>
+    <option value="ABCTech">ABCTech</option>
+    <option value="AeroTech">AeroTech</option>
+    <option value="Allen Bradley">Allen Bradley</option>
+    <option value="Cincinnati">Cincinnati</option>
+    <option value="Dooson">Dooson</option>
+    <option value="Fanuc">Fanuc</option>
+    <option value="HoneyBee">HoneyBee</option>
+    <option value="Hyundai">Hyundai</option>
+    <option value="Mitsubishi">Mitsubishi</option>
+    <input type="submit" onclick="myFunction()">
+</select>
+</form>
+
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("m").value;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+
+</body>
+</html>
